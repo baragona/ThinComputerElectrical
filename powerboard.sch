@@ -12087,7 +12087,7 @@ Source: &lt;a href="https://www.renesas.com/jp/ja/www/doc/datasheet/isl9122a.pdf
 <smd name="4" x="0.7493" y="-0.5" dx="0.7112" dy="0.254" layer="1"/>
 <smd name="5" x="0.7493" y="0" dx="0.7112" dy="0.254" layer="1"/>
 <smd name="6" x="0.7493" y="0.5" dx="0.7112" dy="0.254" layer="1"/>
-<smd name="7" x="0" y="0" dx="0.5588" dy="1.3208" layer="1"/>
+<smd name="7" x="0" y="0" dx="0.381" dy="1.3208" layer="1"/>
 <wire x1="-0.8128" y1="0.508" x2="-0.8128" y2="3.048" width="0.1524" layer="47"/>
 <wire x1="-0.8128" y1="3.048" x2="-0.8128" y2="6.858" width="0.1524" layer="47"/>
 <wire x1="-0.8128" y1="6.858" x2="-0.8128" y2="7.239" width="0.1524" layer="47"/>
@@ -13070,6 +13070,10 @@ Source: &lt;a href="https://www.renesas.com/jp/ja/www/doc/datasheet/isl9122a.pdf
 <junction x="172.72" y="50.8"/>
 <pinref part="JUMPER" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="/MR"/>
+<wire x1="177.8" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="38.1" x2="172.72" y2="40.64" width="0.1524" layer="91"/>
+<junction x="172.72" y="40.64"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -13189,6 +13193,10 @@ Source: &lt;a href="https://www.renesas.com/jp/ja/www/doc/datasheet/isl9122a.pdf
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,177.8,35.56,U2,WDI,,,,"/>
+<approved hash="113,1,104.294,49.5325,BAT1+,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
