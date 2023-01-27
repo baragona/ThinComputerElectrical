@@ -13091,7 +13091,7 @@ Source: &lt;a href="https://www.renesas.com/jp/ja/www/doc/datasheet/isl9122a.pdf
 <wire x1="78.74" y1="35.56" x2="78.74" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="INDUCTOR2" class="1">
+<net name="INDUCTOR2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="LX1"/>
 <wire x1="264.16" y1="50.8" x2="274.32" y2="50.8" width="0.1524" layer="91"/>
@@ -13099,7 +13099,7 @@ Source: &lt;a href="https://www.renesas.com/jp/ja/www/doc/datasheet/isl9122a.pdf
 <wire x1="264.16" y1="53.34" x2="264.16" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="INDUCTOR1" class="1">
+<net name="INDUCTOR1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="LX2"/>
 <wire x1="248.92" y1="53.34" x2="248.92" y2="45.72" width="0.1524" layer="91"/>
