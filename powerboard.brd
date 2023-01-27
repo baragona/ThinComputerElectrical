@@ -68,6 +68,7 @@
 <wire x1="0" y1="22" x2="90" y2="22" width="0.1524" layer="20"/>
 <wire x1="90" y1="22" x2="90" y2="1" width="0.1524" layer="20"/>
 <wire x1="90" y1="1" x2="0" y2="1" width="0.1524" layer="20"/>
+<rectangle x1="9.652" y1="18.034" x2="10.16" y2="18.542" layer="1"/>
 </plain>
 <libraries>
 <library name="MCP73831T-2DCI_MC">
@@ -2170,6 +2171,27 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="21,19,fc0ffe0dfe0dfc0f"/>
+<approved hash="5,1,dd905bc2543d00cc"/>
+<approved hash="19,1,69b896f96afebf0f"/>
+<approved hash="19,1,a0baa05f035d03b8"/>
+<approved hash="19,1,a3bca3590a5b0abe"/>
+<approved hash="19,1,d729242a9bbf7c03"/>
+<approved hash="19,1,ae87aa6e096c0d85"/>
+<approved hash="19,1,c194e7ea0cbd566a"/>
+<approved hash="19,1,e87780f7316f0f60"/>
+<approved hash="19,1,0d193a5df08cfe43"/>
+<approved hash="19,1,5e8c5dafa4ada78e"/>
+<approved hash="19,1,a6ec282421d1d14f"/>
+<approved hash="19,1,52a753dcaadeaba5"/>
+<approved hash="19,1,32dbbd2c09ea3fb3"/>
+<approved hash="19,1,c63892fee21de8dc"/>
+<approved hash="19,1,5d825eada7afa480"/>
+<approved hash="19,1,38b252460adcfe76"/>
+<approved hash="19,1,51a950dea9dca8ab"/>
+<approved hash="19,1,ad81a968006a0483"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
