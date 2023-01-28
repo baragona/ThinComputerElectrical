@@ -1,0 +1,70 @@
+Goal: run E Ink off USBC with no large parts or other boards.
+
+Battery-only version BOM:
+	flex board
+	rigid USBc board
+
+	ADDED/done:
+	Charger https://ww1.microchip.com/downloads/en/DeviceDoc/MCP73831-Family-Data-Sheet-DS20001984H.pdf
+	associated caps and resistors for charging
+	3.3 regulator https://www.renesas.com/us/en/document/dst/isl9122a-datasheet
+	associated caps and inductor for regulator	
+	voltage lockout chip: https://www.digikey.com/en/products/detail/microchip-technology/MIC826RYMT-TR/4004811
+	Charging LED
+	8mm between battery pads
+	9mm between different battery's pads
+	Add all battery Pads and position them properly
+	Ensure there is clearance around batteries
+	Add load testing LED: https://www.digikey.com/en/products/detail/samsung-semiconductor-inc/SCP7RTJ5HEL1RLQF6E/8535775
+	Add load testing resistor pads: P1E101CT-ND
+	Replaceable zero ohm resistor for testing current
+	Charge at 37 mA = 27k Prog resistor charge
+	A way to disconnect the battery without soldering: https://www.digikey.com/en/products/detail/sullins-connector-solutions/GEC02SBSN-M89/862281
+	Pads to connect external output
+	Pick R,L,C components and fix footprints
+	Add design rules from PCB fab.
+	Ensure caps/inductors are close as possible to chips
+	Ensure board dimensions are correct
+	Add vias around chips through planes
+	fix silkscreens
+
+	TODO:
+	Order solder paste
+	Tweezers
+	hot air?
+
+
+	
+	
+
+Use a FPC breakout board.
+
+Design board 2.
+
+Low power CPU Chip: https://www.digikey.com/en/products/detail/stmicroelectronics/STM32L562CEU6/11590978?s=N4IgjCBcpgbFoDGUBmBDANgZwKYBoQB7KAbXABYBmAdgA4BWEAue282p8WV86zsWoLCV%2BATmrkwAJk5SpsMGD4E5ChiAC6BAA4AXKCADKugE4BLAHYBzEAF9mo2qIQhkkdNnxFSIAAyb7EABaCGhXVExcAmJIMnJxAIIgmTC3UwBXLxiyRg1AoPIXNw8o71iQOl8BAMCUsixdAFtKGTygA
+
+ESP32 wants 500ma though. Maybe this is a no-battery version
+
+Flex Board 1 BOM
+Flex connector for e ink
+Connect to USBC board
+Debug/jtag port
+ESP32
+LDO for running on battery or USBC
+Resistor for battery charger limiter
+Switch for turning on/off charger
+3x thin thermistor sensors for batteries https://www.mouser.com/datasheet/2/362/semitec%20usa%20corporation_ftthermistor-1202825.pdf
+Hardware for thermistors
+
+Buttons
+
+Board 2:
+USBC connector
+Connect to flex board
+
+
+how long would 75mAh battery take to discharge at 1uA
+1mAh would be 75 hours
+1uA would be 75000 hours
+10uA would be 7500 hours = 312 days
+ie 10uA would be a good under voltage lockout / quiescent current
