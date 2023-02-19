@@ -1,5 +1,45 @@
 Goal: run E Ink off USBC with no large parts or other boards.
 
+
+Issues so far:
+Trimpot footprint is wrong ∆
+Alignment with usbc board is wrong ∆
+Jumper position is awkward ∆
+Island in the PCB layout ∆
+Add real thermal vias ∆
+Put rev2 note on new board ∆
+
+Tests remaining
+How to get 5v from apple chargers
+
+Next boards:
+	Add CPU
+	Add e ink connector
+	Add buttons
+	Add debug port
+	GPIO LEDs
+	Serial Port, gpio outs
+
+Initial Specifications:
+	At least 5 buttons
+	Credit card size +- 1cm
+	No more than 1mm thick
+	USBC port for charging the battery
+	STM32 CPU
+	Internal battery
+	E Ink display which refreshes in about .3s for partial screen updates.
+	No power required when not updating the screen - very long battery life when not actively in use.
+	Ability to display multiple pages of stored text or images.
+	Ability to load code onto the processor - fully open source software
+	Ability to run C or Rust programs with some examples
+	Initial parts are not waterproof. Do not get them wet.
+	The cards may have steel backing, or PCB material depending on development costs.
+	The durability and longevity of the initial units is totally unknown as this is the first shipment of parts.
+	Cost: $100 per card for 100 cards, paid $5000 up front, paid $5000 upon delivery of the last units.
+	Delivery Timeline: as soon as possible. Best estimate is likely 3-6 months.
+
+	
+
 Battery-only version BOM:
 	flex board
 	rigid USBc board
@@ -28,13 +68,10 @@ Battery-only version BOM:
 	Add vias around chips through planes
 	fix silkscreens
 
-	TODO:
-	Order solder paste
-	Tweezers
-	hot air?
+
+The CPU should be able to measure the 3.3V, the battery voltage, the charger input voltage
 
 
-	
 	
 
 Use a FPC breakout board.
@@ -42,6 +79,10 @@ Use a FPC breakout board.
 Design board 2.
 
 Low power CPU Chip: https://www.digikey.com/en/products/detail/stmicroelectronics/STM32L562CEU6/11590978?s=N4IgjCBcpgbFoDGUBmBDANgZwKYBoQB7KAbXABYBmAdgA4BWEAue282p8WV86zsWoLCV%2BATmrkwAJk5SpsMGD4E5ChiAC6BAA4AXKCADKugE4BLAHYBzEAF9mo2qIQhkkdNnxFSIAAyb7EABaCGhXVExcAmJIMnJxAIIgmTC3UwBXLxiyRg1AoPIXNw8o71iQOl8BAMCUsixdAFtKGTygA
+
+Cheaper CPU with less RAM: https://www.digikey.com/en/products/detail/stmicroelectronics/STM32L412K8U6/10414668
+
+
 
 ESP32 wants 500ma though. Maybe this is a no-battery version
 

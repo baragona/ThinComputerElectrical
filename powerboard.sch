@@ -12774,8 +12774,7 @@ Source: &lt;a href="https://www.renesas.com/jp/ja/www/doc/datasheet/isl9122a.pdf
 <part name="BAT3+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,54/0,9" device="" package3d_urn="urn:adsk.eagle:package:30847/1"/>
 <part name="BAT3-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,54/0,9" device="" package3d_urn="urn:adsk.eagle:package:30847/1"/>
 <part name="U$1" library="samsung_chipled" deviceset="CHIPLED" device=""/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-TRIMM" device="CVR42A" package3d_urn="urn:adsk.eagle:package:23735/1"/>
-<part name="LEDCURRENT" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="0"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-TRIMM" device="3165W" package3d_urn="urn:adsk.eagle:package:23723/1"/>
 <part name="JUMPER" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
 <part name="3V3OUT" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,54/0,9" device="" package3d_urn="urn:adsk.eagle:package:30847/1"/>
 <part name="GNDOUT" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,54/0,9" device="" package3d_urn="urn:adsk.eagle:package:30847/1"/>
@@ -12898,10 +12897,6 @@ Source: &lt;a href="https://www.renesas.com/jp/ja/www/doc/datasheet/isl9122a.pdf
 <instance part="R2" gate="G$1" x="360.68" y="48.26" smashed="yes">
 <attribute name="NAME" x="354.711" y="44.45" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="356.87" y="44.45" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="LEDCURRENT" gate="G$1" x="342.9" y="58.42" smashed="yes">
-<attribute name="NAME" x="339.09" y="59.9186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="339.09" y="55.118" size="1.778" layer="96"/>
 </instance>
 <instance part="JUMPER" gate="G$1" x="154.94" y="58.42" smashed="yes">
 <attribute name="NAME" x="151.13" y="59.9186" size="1.778" layer="95"/>
@@ -13119,12 +13114,13 @@ Source: &lt;a href="https://www.renesas.com/jp/ja/www/doc/datasheet/isl9122a.pdf
 <wire x1="327.66" y1="50.8" x2="327.66" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="58.42" x2="327.66" y2="50.8" width="0.1524" layer="91"/>
 <junction x="327.66" y="50.8"/>
-<pinref part="LEDCURRENT" gate="G$1" pin="1"/>
-<wire x1="337.82" y1="58.42" x2="327.66" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="3V3OUT" gate="1" pin="P"/>
 <wire x1="330.2" y1="71.12" x2="327.66" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="71.12" x2="327.66" y2="58.42" width="0.1524" layer="91"/>
 <junction x="327.66" y="58.42"/>
+<pinref part="R2" gate="G$1" pin="E"/>
+<wire x1="360.68" y1="58.42" x2="360.68" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="58.42" x2="360.68" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -13150,14 +13146,6 @@ Source: &lt;a href="https://www.renesas.com/jp/ja/www/doc/datasheet/isl9122a.pdf
 <wire x1="365.76" y1="60.96" x2="378.46" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="ANODE"/>
 <wire x1="378.46" y1="60.96" x2="378.46" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="1">
-<segment>
-<pinref part="R2" gate="G$1" pin="E"/>
-<pinref part="LEDCURRENT" gate="G$1" pin="2"/>
-<wire x1="347.98" y1="58.42" x2="360.68" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="58.42" x2="360.68" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="JUMPER" class="1">
